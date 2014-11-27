@@ -9,12 +9,16 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 // Register the Twig templating engine
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
   'twig.path' => __DIR__.'/../views',
+  
+));
+//
+$app->register(new Silex\Provider\HtmlServiceProvider(), array(
   'home.path' => __DIR__.'/../web',
 ));
 // Our web handlers
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return render('home.html');
+  return include_once("home.html"); 
 });
 
 $app->get('/twig/{name}', function($name) use($app) {
