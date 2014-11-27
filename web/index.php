@@ -9,6 +9,7 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 // Register the Twig templating engine
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
   'twig.path' => __DIR__.'/../views',
+  'home.path' => __DIR__.'/../web'
 ));
 // Our web handlers
 $app->get('/', function() use($app) {
@@ -20,6 +21,13 @@ $app->get('/twig/{name}', function($name) use($app) {
     'name' => $name,
   ));
 });
+
+$app->get('/home/{name}', function($name) use($app) {
+  return $app['home']->render('home.html', array(
+    'name' => $name,
+  ));
+});
+
 $app->run();
 
 //include lolawebshop home page
