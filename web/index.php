@@ -12,9 +12,11 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
   
 ));
 // Our web handlers
-$app->get('/', function() use($app) {
+$app->get('/{name}', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app->redirect('/home.html');
+  return $app->render('/home.html', array(
+    'name' => $name,
+  ));
 });
 
 $app->get('/twig/{name}', function($name) use($app) {
