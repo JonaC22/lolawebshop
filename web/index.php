@@ -11,14 +11,10 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
   'twig.path' => __DIR__.'/../views',
   
 ));
-//
-$app->register(new Silex\Provider\HtmlServiceProvider(), array(
-  'home.path' => __DIR__.'/../web',
-));
 // Our web handlers
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return include_once("home.html"); 
+  return $app->redirect('/home.html');
 });
 
 $app->get('/twig/{name}', function($name) use($app) {
