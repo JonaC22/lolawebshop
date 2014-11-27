@@ -1,5 +1,5 @@
 <?php 
-require('../vendor/autoload.php');
+/*require('../vendor/autoload.php');
 $app = new Silex\Application();
 $app['debug'] = true;
 // Register the monolog logging service
@@ -9,13 +9,11 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 // Register the Twig templating engine
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
   'twig.path' => __DIR__.'/../views',
-  
 ));
 // Our web handlers
-$app->get('/{name}', function() use($app) {
+$app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app->render('/home.html', array(
-    'name' => $name,
+  return $app->render('index.html', ['name' => 'Fabien']);
   ));
 });
 
@@ -26,8 +24,8 @@ $app->get('/twig/{name}', function($name) use($app) {
 });
 
 $app->run();
-
+*/
 //include lolawebshop home page
-//include_once("home.html"); 
+include_once("home.html"); 
 
 ?>
