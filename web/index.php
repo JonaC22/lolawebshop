@@ -1,9 +1,9 @@
 <?php
-/*
+
 include_once("home.html"); 
-*/
 
 
+/*
 # This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
 function pg_connection_string_from_database_url() {
@@ -22,4 +22,5 @@ if (!pg_num_rows($result)) {
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
 }
 print "\n";
+*/
 ?>
