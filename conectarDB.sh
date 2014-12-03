@@ -1,0 +1,1 @@
+heroku pg:psql HEROKU_POSTGRESQL_MAROON --app lolawebshop

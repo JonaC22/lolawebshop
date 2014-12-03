@@ -1,0 +1,1 @@
+psql -h ec2-54-163-248-144.compute-1.amazonaws.com -p 5432 -d d8eq0ia55j4gt9 -U rtgnkdmqakajwg -f sql/scriptDrop.sql
