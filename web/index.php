@@ -1,8 +1,6 @@
 <?php
 
 include_once("home.html"); 
-
-
 /*
 # This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
