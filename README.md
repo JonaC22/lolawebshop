@@ -30,3 +30,7 @@ $ heroku open
 For more information about using PHP on Heroku, see these Dev Center articles:
 
 - [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+
+## TODO
+- Integrar con [Laravel] y [Angular.js]
+- Integrar con base de datos postgresql
