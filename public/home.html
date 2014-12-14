@@ -167,10 +167,9 @@
               <div class="drop">
                 <input type="text" value="todos">
                   <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="drop-list"></a>
-                    <span>
+                     <span>
                         <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter active" data-filter="all">todos</a>
                         <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".collares">collares</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".collar">collares</a>
                         <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".clutch">clutchs</a>
                         <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".portacelular">portacelulares</a>
                         <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".sombrero">sombreros</a>
@@ -183,85 +182,24 @@
  </div>         
   
       <div class="full-width scale-text"> 
-            <div class="container-mix" id="MixItUp565343">                   
-                      <div class="img-work mix collares" style="display: inline-block;">
-                        <img src="./home_files/collar.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
+            <div class="container-mix" id="MixItUp565343" ng-init="items = [
+              {titulo: 'Collares', clase: 'collares', marca: 'Collar X-T', imagen: 'collar.jpg'},
+              {titulo: 'Collares', clase: 'collares', marca: 'Collar Y-T', imagen: 'collar2.jpg'},
+              {titulo: 'Clutchs', clase: 'clutch', marca: 'Clutch Y-T', imagen: 'Clutchs.jpg'},
+              {titulo: 'Sombreros', clase: 'sombrero', marca: 'Sombrero con animalprint', imagen: 'sombrero.jpg'},
+              {titulo: 'Chalinas', clase: 'chalina', marca: 'Chalinas varias', imagen: 'chalinas.jpg'},
+              {titulo: 'Monederos', clase: 'monedero', marca: 'Monederos de flores', imagen: 'monederos.jpg'},
+              {titulo: 'Aros', clase: 'aros', marca: 'Aros', imagen: 'aros.jpg'},
+              {titulo: 'Portacelulares', clase: 'portacelular', marca: 'Portacelulares', imagen: 'portacelular.jpg'},
+              {titulo: 'Cintos', clase: 'cinto', marca: 'Cintos dorados', imagen: 'cintos.jpg'},
+              {titulo: 'Billeteras', clase: 'billetera', marca: 'Billeteras de cuero', imagen: 'billetera.jpg'}
+            ]">  
+                      <div class="img-work mix ng-class:item.clase" style="display: inline-block;" ng-repeat="item in items">
+                        <img ng-src="./home_files/{{item.imagen}}" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
                         <span></span>
                         <div class="works-title color_fff">
-                            <i>Collares</i><br>
-                            <b>Collar X-T</b>
-                        </div>
-                      </div>
-                      <div class="img-work mix collares" style="display: inline-block;">
-                        <img src="./home_files/collar2.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>Collares</i><br>
-                            <b>Collar Y-T</b>
-                        </div>
-                      </div>
-                      <div class="img-work mix clutch" style="display: inline-block;">
-                        <img src="./home_files/Clutchs.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>Clutchs</i><br>
-                            <b>Clutchs X-T</b>
-                        </div>
-                      </div>
-                      <div class="img-work mix sombrero" style="display: inline-block;">
-                        <img src="./home_files/sombrero.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>Sombreros</i><br>
-                            <b>Sombrero Lola</b>
-                        </div>
-                      </div>
-                      <div class="img-work mix chalina" style="display: inline-block;">
-                        <img src="./home_files/chalinas.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>Chalinas</i><br>
-                            <b>Chalinas varias</b>
-                        </div>
-                      </div>
-                      <div class="img-work mix monedero" style="display: inline-block;">
-                        <img src="./home_files/monederos.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>Monederos</i><br>
-                            <b>Monederos de flores</b>
-                        </div>
-                      </div>
-                      <div class="img-work mix aros" style="display: inline-block;">
-                        <img src="./home_files/aros.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>Aros</i><br>
-                            <b>Aros Lola</b>
-                        </div>
-                      </div>
-                      <div class="img-work mix portacelular" style="display: inline-block;">
-                        <img src="./home_files/portacelular.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>Portacelulares</i><br>
-                            <b>Portacelulares X-T</b>
-                        </div>
-                      </div>          
-                      <div class="img-work mix cinto" style="display: inline-block;">
-                        <img src="./home_files/cintos.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>Cintos</i><br>
-                            <b>Cintos dorados</b>
-                        </div>
-                      </div>
-                      <div class="img-work mix billetera" style="display: inline-block;">
-                         <img src="./home_files/billetera.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                         <span></span>
-                         <div class="works-title color_fff">
-                            <i>Billeteras</i><br>
-                            <b>Billeteras de cuero</b>
+                            <i>{{item.titulo}}</i><br>
+                            <b>{{item.marca}}</b>
                         </div>
                       </div>
                 </div>      
