@@ -62,7 +62,7 @@
                                       <div class="slider-top-thumbs">
                                       	<div class="row-fluid table">
                                               <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 t_td">
-                                              	<h1 class="color-5acdc4 animation-scale">Lola <span class="animation-opacity animation-800">tiene</span> lo que estas buscando!</h1>                     
+                                              	<h1 class="color-5acdc4 animation-scale">Lola <span class="animation-opacity animation-800">tiene</span> lo que estás buscando!</h1>                     
                                               </div>
                                         </div>
                                       </div>
@@ -74,7 +74,7 @@
                                       <div class="slider-top-thumbs">
                                       	<div class="row-fluid table">
                                               <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 t_td">
-                                              	<h1 class="color-5acdc4 animation-scale">Lola <span class="animation-opacity animation-800">tiene</span> lo que estas buscando!</h1>
+                                              	<h1 class="color-5acdc4 animation-scale">Tenemos <span class="animation-opacity animation-800">productos</span> únicos!</h1>
                                               </div>
                                           </div>
                                       </div>
@@ -99,7 +99,7 @@
                                       <div class="slider-top-thumbs">
                                       	<div class="row-fluid table">
                                               <div class="ccol-lg-6 col-lg-offset-3 ol-md-6 col-md-offset-3 col-sm-12 col-xs-12 t_td">
-                                              	<h1 class="color-5acdc4 animation-scale">Tenemos la ultima <span class="animation-opacity animation-500">tendencia!</span></h1>
+                                              	<h1 class="color-5acdc4 animation-scale">Tenemos la última <span class="animation-opacity animation-500">tendencia!</span></h1>
 
                                               </div>
                                           </div>
@@ -112,7 +112,7 @@
                                       <div class="slider-top-thumbs">
                                       	<div class="row-fluid table">
                                               <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 t_td">
-                                              	<h1 class="color-5acdc4 animation-scale">Tenemos variedad para <span class="animation-opacity animation-500">ofrecerte</span></h1>
+                                              	<h1 class="color-5acdc4 animation-scale">Una gran variedad para <span class="animation-opacity animation-500">ofrecerte</span></h1>
                                                  
                                                 
                                               </div>
