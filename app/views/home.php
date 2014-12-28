@@ -57,7 +57,7 @@
                               <div class="swiper-wrapper" style="width: 7620px; height: 635px; transform: translate3d(-6350px, 0px, 0px); -webkit-transform: translate3d(-6350px, 0px, 0px); transition: 0.3s; -webkit-transition: 0.3s;">
                               <div class="swiper-slide" data-val="3" style="width: 1270px; height: 635px;">
                                       <div class="bg" style="height: 635px;">
-                                          <img class="center_img onload loaded" src=<?php print(Cloudy::show('sample', array())); ?> data-width-img="1920" data-height-img="1080" onload="this.setAttribute(&#39;class&#39;, &#39;center_img onload loaded&#39;);" style="left: 0px; top: -39.6875px; width: 100%; height: auto;">
+                                          <img class="center_img onload loaded" src="./home_files/bg.jpg" data-width-img="1920" data-height-img="1080" onload="this.setAttribute(&#39;class&#39;, &#39;center_img onload loaded&#39;);" style="left: 0px; top: -39.6875px; width: 100%; height: auto;">
                                       </div>
                                       <div class="slider-top-thumbs">
                                       	<div class="row-fluid table">
