@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "094f0f4cbcb6cd8adce292142751df6d",
+    "hash": "713e73102d42433b8d285c227886bd4b",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -52,6 +52,55 @@
                 "preload"
             ],
             "time": "2014-03-12 00:05:31"
+        },
+        {
+            "name": "cloudinary/cloudinary_php",
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudinary/cloudinary_php.git",
+                "reference": "2b2ad9c7749d27a7fb2f153426e895bf8b2f0942"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/2b2ad9c7749d27a7fb2f153426e895bf8b2f0942",
+                "reference": "2b2ad9c7749d27a7fb2f153426e895bf8b2f0942",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "src/Helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudinary",
+                    "homepage": "https://github.com/cloudinary/cloudinary_php/graphs/contributors"
+                }
+            ],
+            "description": "Cloudinary PHP SDK",
+            "homepage": "https://github.com/cloudinary/cloudinary_php",
+            "keywords": [
+                "cdn",
+                "cloud",
+                "cloudinary",
+                "image management",
+                "sdk"
+            ],
+            "time": "2014-07-07 10:27:00"
         },
         {
             "name": "d11wtq/boris",
@@ -237,16 +286,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v4.2.12",
+            "version": "v4.2.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "70a60f2ff9b96b3fcd88a68ef5382557733fe671"
+                "reference": "31fe6a5747bbe3c2df21dc4cc8f291e75ab6144f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/70a60f2ff9b96b3fcd88a68ef5382557733fe671",
-                "reference": "70a60f2ff9b96b3fcd88a68ef5382557733fe671",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/31fe6a5747bbe3c2df21dc4cc8f291e75ab6144f",
+                "reference": "31fe6a5747bbe3c2df21dc4cc8f291e75ab6144f",
                 "shasum": ""
             },
             "require": {
@@ -348,7 +397,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-11 17:14:36"
+            "time": "2014-12-22 20:56:10"
         },
         {
             "name": "monolog/monolog",
@@ -668,6 +717,52 @@
             "time": "2014-11-10 03:08:59"
         },
         {
+            "name": "pimple/pimple",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/2019c145fe393923f3441b23f29bbdfaa5c58c4d",
+                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2013-11-22 08:30:29"
+        },
+        {
             "name": "predis/predis",
             "version": "v0.8.7",
             "source": {
@@ -754,6 +849,89 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "silex/silex",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Silex.git",
+                "reference": "8c5e86eb97f3eee633729b22e950082fb5591328"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Silex/zipball/8c5e86eb97f3eee633729b22e950082fb5591328",
+                "reference": "8c5e86eb97f3eee633729b22e950082fb5591328",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "pimple/pimple": "~1.0",
+                "symfony/event-dispatcher": ">=2.3,<2.6-dev",
+                "symfony/http-foundation": ">=2.3,<2.6-dev",
+                "symfony/http-kernel": ">=2.3,<2.6-dev",
+                "symfony/routing": ">=2.3,<2.6-dev"
+            },
+            "require-dev": {
+                "doctrine/dbal": "~2.2",
+                "monolog/monolog": "~1.4,>=1.4.1",
+                "phpunit/phpunit": "~3.7",
+                "swiftmailer/swiftmailer": "5.*",
+                "symfony/browser-kit": ">=2.3,<2.6-dev",
+                "symfony/config": ">=2.3,<2.6-dev",
+                "symfony/css-selector": ">=2.3,<2.6-dev",
+                "symfony/debug": ">=2.3,<2.6-dev",
+                "symfony/dom-crawler": ">=2.3,<2.6-dev",
+                "symfony/finder": ">=2.3,<2.6-dev",
+                "symfony/form": ">=2.3,<2.6-dev",
+                "symfony/locale": ">=2.3,<2.6-dev",
+                "symfony/monolog-bridge": ">=2.3,<2.6-dev",
+                "symfony/options-resolver": ">=2.3,<2.6-dev",
+                "symfony/process": ">=2.3,<2.6-dev",
+                "symfony/security": ">=2.3,<2.6-dev",
+                "symfony/serializer": ">=2.3,<2.6-dev",
+                "symfony/translation": ">=2.3,<2.6-dev",
+                "symfony/twig-bridge": ">=2.3,<2.6-dev",
+                "symfony/validator": ">=2.3,<2.6-dev",
+                "twig/twig": ">=1.8.0,<2.0-dev"
+            },
+            "suggest": {
+                "symfony/browser-kit": ">=2.3,<2.6-dev",
+                "symfony/css-selector": ">=2.3,<2.6-dev",
+                "symfony/dom-crawler": ">=2.3,<2.6-dev",
+                "symfony/form": ">=2.3,<2.6-dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Silex": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                }
+            ],
+            "description": "The PHP micro-framework based on the Symfony2 Components",
+            "homepage": "http://silex.sensiolabs.org",
+            "keywords": [
+                "microframework"
+            ],
+            "time": "2014-09-26 09:32:30"
         },
         {
             "name": "stack/builder",
@@ -1127,17 +1305,17 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.6.1",
+            "version": "v2.5.8",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "720fe9bca893df7ad1b4546649473b5afddf0216"
+                "reference": "c0a15f7c45efc6506077c728658c16b579929bf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/720fe9bca893df7ad1b4546649473b5afddf0216",
-                "reference": "720fe9bca893df7ad1b4546649473b5afddf0216",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/c0a15f7c45efc6506077c728658c16b579929bf8",
+                "reference": "c0a15f7c45efc6506077c728658c16b579929bf8",
                 "shasum": ""
             },
             "require": {
@@ -1146,8 +1324,7 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~2.0",
-                "symfony/dependency-injection": "~2.6",
-                "symfony/expression-language": "~2.6",
+                "symfony/dependency-injection": "~2.0,<2.6.0",
                 "symfony/stopwatch": "~2.2"
             },
             "suggest": {
@@ -1157,7 +1334,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -1181,7 +1358,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-12-02 20:19:20"
+            "time": "2014-12-02 20:15:53"
         },
         {
             "name": "symfony/filesystem",
@@ -1633,21 +1810,70 @@
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
             "time": "2014-12-02 20:15:53"
+        },
+        {
+            "name": "teepluss/cloudinary",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teepluss/laravel4-cloudinary.git",
+                "reference": "db6026b9105d7f6279213fed9c08028619129238"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teepluss/laravel4-cloudinary/zipball/db6026b9105d7f6279213fed9c08028619129238",
+                "reference": "db6026b9105d7f6279213fed9c08028619129238",
+                "shasum": ""
+            },
+            "require": {
+                "cloudinary/cloudinary_php": "1.0.11",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/support": "4.1.x"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Teepluss\\Cloudinary": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Teepluss",
+                    "email": "admin@laravel.in.th"
+                }
+            ],
+            "description": "Cloudinary API wrapper for Laravel 4",
+            "homepage": "https://github.com/teepluss/laravel4-cloudinary",
+            "keywords": [
+                "api",
+                "cloudinary",
+                "image",
+                "laravel",
+                "laravel4",
+                "upload"
+            ],
+            "time": "2014-08-15 12:47:38"
         }
     ],
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v49",
+            "version": "v53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "0adff36b9d648a3f836271fb7a6dc7eafff74356"
+                "reference": "5eecb546765b88bea8bbb78dc0cf0a9fe0ee842c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/0adff36b9d648a3f836271fb7a6dc7eafff74356",
-                "reference": "0adff36b9d648a3f836271fb7a6dc7eafff74356",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/5eecb546765b88bea8bbb78dc0cf0a9fe0ee842c",
+                "reference": "5eecb546765b88bea8bbb78dc0cf0a9fe0ee842c",
                 "shasum": ""
             },
             "bin": [
@@ -1678,13 +1904,18 @@
                 "nginx",
                 "php"
             ],
-            "time": "2014-11-28 14:22:06"
+            "time": "2014-12-26 18:35:15"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "teepluss/cloudinary": 20
+    },
     "prefer-stable": false,
-    "platform": [],
+    "prefer-lowest": false,
+    "platform": {
+        "php": "5.5.12"
+    },
     "platform-dev": []
 }

@@ -10,9 +10,7 @@ START TRANSACTION;
 		proveedor varchar(40) NOT NULL,
 		categoria int NOT NULL,
 		fecha_agregado date NOT NULL,
-		imagen bytea,
-		cantidad int DEFAULT 0,
-		precio numeric
+		imagen oid
 	);
 	ALTER TABLE lola.productos ADD CONSTRAINT FK_categoria
 	FOREIGN KEY (categoria)

@@ -1,6 +1,5 @@
 location / {
-    index index.php;
-    try_files $uri $uri/ /index.php$is_args$args; 
+    index  index.php index.html index.htm;
 }
 
 # for people with app root as doc root, restrict access to a few things

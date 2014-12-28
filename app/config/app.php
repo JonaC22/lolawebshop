@@ -121,7 +121,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-
+        'Teepluss\Cloudinary\CloudinaryServiceProvider'
 	),
 
 	/*
@@ -156,6 +156,7 @@ return array(
 		'Blade'             => 'Illuminate\Support\Facades\Blade',
 		'Cache'             => 'Illuminate\Support\Facades\Cache',
 		'ClassLoader'       => 'Illuminate\Support\ClassLoader',
+		'Cloudy'            => 'Teepluss\Cloudinary\Facades\Cloudy',
 		'Config'            => 'Illuminate\Support\Facades\Config',
 		'Controller'        => 'Illuminate\Routing\Controller',
 		'Cookie'            => 'Illuminate\Support\Facades\Cookie',

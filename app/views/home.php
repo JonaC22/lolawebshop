@@ -248,6 +248,52 @@
       </div>   
    </div> 
 </div>        
+<!--popup-works-->
+      
+<div class="popup-work-container">
+    <div class="popup-container popup-slider">
+      <div class="swiper-wrapper align-center" style="width: 3810px; margin-top: -400px; transform: translate3d(-2540px, 0px, 0px); -webkit-transform: translate3d(-2540px, 0px, 0px); transition: 0s; -webkit-transition: 0s;">
+        <div class="swiper-slide popup-slide" style="width: 1270px;">
+           <div class="img-pp">
+               <img src="./home_files/collar.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
+               <div class="gallery-title color_fff">
+                   <br><span>NUEVO!</span>
+                   <br><b>Collar X-T</b>
+               </div> 
+               <div class="close-up class">
+                 <span class="close-x">+</span>
+               </div>  
+           </div> 
+        </div>
+        <div class="swiper-slide popup-slide" style="width: 1270px;">
+           <div class="img-pp">
+               <img src="./home_files/collar2.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
+               <div class="gallery-title color_fff">
+                   <br><span>NUEVO!</span>
+                   <br><b>Collar Y-T</b>
+               </div>
+               <div class="close-up class">
+                 <span class="close-x">+</span>
+               </div>   
+           </div>
+        </div>
+        <div class="swiper-slide popup-slide swiper-slide-visible swiper-slide-active" style="width: 1270px;">
+           <div class="img-pp">
+               <img src="./home_files/Clutchs.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
+               <div class="gallery-title color_fff">
+                   <br><span>NUEVO!</span>
+                   <br><b>Clutchs X-T</b>
+               </div>
+               <div class="close-up class">
+                 <span class="close-x">+</span>
+               </div>  
+           </div>
+        </div>    
+      </div>
+        <div class="slider-prev">Ô</div>
+        <div class="slider-next">×</div>
+    </div> 
+</div>
 <script src="./home_files/webfont.js" type="text/javascript" async=""></script>
 <script src="./home_files/jquery-1.11.1.min.js"></script>
 <script src="./home_files/all.js"></script>

@@ -12,8 +12,8 @@ ELSE RAISE NOTICE 'TEST Categorias FAILED';
 END IF;
 
 --Productos
-INSERT INTO lola.productos (id, titulo, proveedor, categoria, fecha_agregado, cantidad, precio)
-VALUES (1, 'Collar X-T', 'X-T', 1, current_date, 10, 130.50);
+INSERT INTO lola.productos (id, titulo, proveedor, categoria, fecha_agregado, imagen)
+VALUES (1, 'Collar X-T', 'X-T', 1, current_date, lo_import('collarRubi.jpg'));
 
 IF EXISTS(
 		SELECT * FROM lola.productos
@@ -22,8 +22,6 @@ IF EXISTS(
 		AND proveedor = 'X-T'
 		AND categoria = 1
 		AND fecha_agregado = current_date
-		AND cantidad = 10
-		AND precio = 130.50
 )
 THEN RAISE NOTICE  'TEST Productos OK';
 ELSE RAISE NOTICE  'TEST Productos FAILED';
