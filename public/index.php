@@ -56,7 +56,7 @@ function pg_connection_string_from_database_url() {
 
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
 
-$productos = pg_query($pg_conn, "SELECT * FROM lola.productos");
+$productos = pg_query($pg_conn, "SELECT * FROM lola.productos ORDER BY fecha_agregado DESC");
 
 $categorias = pg_query($pg_conn, "SELECT * FROM lola.categorias");
 
