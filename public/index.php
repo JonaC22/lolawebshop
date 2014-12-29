@@ -48,9 +48,9 @@ $app = require_once __DIR__.'/../bootstrap/start.php';
 */
 
 #COMENTAR LA CONEXION PARA TEST LOCAL
-/*
+
 function pg_connection_string_from_database_url() {
-  extract(parse_url($_ENV["DATABASE_URL"])); #hay que comentar esto, debido a esta variable del entorno cloud
+  extract(parse_url(getenv("DATABASE_URL")));
   return "user=$user password=$pass host=$host dbname=" . substr($path, 1); # <- you may want to add sslmode=require there too
 }
 
@@ -59,6 +59,5 @@ $pg_conn = pg_connect(pg_connection_string_from_database_url());
 $productos = pg_query($pg_conn, "SELECT * FROM lola.productos");
 
 $categorias = pg_query($pg_conn, "SELECT * FROM lola.categorias");
-*/
 
 $app->run();
