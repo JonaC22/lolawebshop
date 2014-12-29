@@ -34,5 +34,11 @@ For more information about using PHP on Heroku, see these Dev Center articles:
 For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebshop/wiki)
 
 ## TODO
-- Integrar con [Laravel] y [Angular.js]
-- Integrar con base de datos postgresql
+- Integrar con :
+	- Laravel ![alt text][DONE]
+	- Angular.js ![alt text][IN PROGRESS]
+	- Postgresql ![alt text][IN PROGRESS]
+	- Cloudinary ![alt text][IN PROGRESS]
+
+[IN PROGRESS]: http://henri.eisenbeis.free.fr/plus/WorkInProgress.png "In Progress"
+[DONE]: http://www.amandasmithphotography.com/img/icon_done.gif "Done"
