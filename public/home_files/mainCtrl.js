@@ -2,6 +2,16 @@ angular.module('lolaFront', [])
 .controller('MainCtrl', [
 '$scope',
 function ($scope) {
+    $scope.url = 'search.php';
+    /*$http.get($scope.url).
+        success(function(data, status, headers, config) {
+            $scope.clases = data;
+        }).
+        error(function(data, status, headers, config) {
+            $scope.data = data || "Request failed";
+            $scope.status = status;
+        });
+    */
     $scope.clases = ['collares', 'clutchs', 'sombreros', 'chalinas', 'monederos', 'marcas', 'aros', 'portacelulares', 'cintos', 'billeteras'];
     $scope.items = [
     {clase: 'collares', marca: 'Collar X-T', imagen: 'collar.jpg'},
