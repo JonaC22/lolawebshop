@@ -158,15 +158,18 @@
        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 scale-text">                      
               <div class="drop">
                 <input type="text" value="todos">
+                <!-- TODO: como crear los filtros de categorias con angular y seleccionarlos 
+                <select ng-model="clases" ng-options="elem for elem in clases"></select> -->
                   <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="drop-list"></a>
-                     <span>
+                    <span>
+<!--                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter="all" ng-repeat= "clase in clases"> {{clase}} </a>-->
                         <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter active" data-filter="all">todos</a>
                         <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".collares">collares</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".clutch">clutchs</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".portacelular">portacelulares</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".sombrero">sombreros</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".chalina">chalinas</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".billetera">billeteras</a>
+                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".clutchs">clutchs</a>
+                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".portacelulares">portacelulares</a>
+                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".sombreros">sombreros</a>
+                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".chalinas">chalinas</a>
+                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".billeteras">billeteras</a>
                     </span>
               </div>
         </div>

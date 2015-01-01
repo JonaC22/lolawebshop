@@ -1,18 +1,21 @@
 angular.module('lolaFront', [])
 .controller('MainCtrl', [
-'$scope',
-function ($scope) {
-    $scope.url = 'search.php';
-    /*$http.get($scope.url).
-        success(function(data, status, headers, config) {
-            $scope.clases = data;
-        }).
-        error(function(data, status, headers, config) {
-            $scope.data = data || "Request failed";
-            $scope.status = status;
+'$scope', '$http',
+function ($scope, $http) {
+    //TODO: crear un servicio para search y pasarlo al controller como funcion
+    //trae las categorias almacenadas en la base de datos
+    $scope.url = '/search';
+    $http.get($scope.url).
+        then(function(data, status, headers, config) {
+            var categorias = [];
+            angular.forEach(data.data, function(value, key) {
+                this.push(value.titulo);
+            }, categorias);
+            console.log(categorias);
+            $scope.clases = categorias;
         });
-    */
-    $scope.clases = ['collares', 'clutchs', 'sombreros', 'chalinas', 'monederos', 'marcas', 'aros', 'portacelulares', 'cintos', 'billeteras'];
+
+    //$scope.clases = ['collares', 'clutchs', 'sombreros', 'chalinas', 'monederos', 'aros', 'portacelulares', 'cintos', 'billeteras'];
     $scope.items = [
     {clase: 'collares', marca: 'Collar X-T', imagen: 'collar.jpg'},
     {clase: 'collares', marca: 'Collar Y-T', imagen: 'collar2.jpg'},
