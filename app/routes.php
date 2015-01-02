@@ -13,4 +13,4 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
-Route::get('search', 'HomeController@search');
+Route::get('/search', 'HomeController@search');
