@@ -54,7 +54,15 @@ http {
         error_log stderr;
         access_log /tmp/heroku.nginx_access.<?=getenv('PORT')?:'8080'?>.log;
         
-        include "<?=getenv('HEROKU_PHP_NGINX_CONFIG_INCLUDE')?>";
+        location @rewrite {
+            rewrite ^/(.*)$ /index.php?_url=/$1;
+        }
+
+        location / {
+            index index.php index.html index.htm;
+
+            try_files $uri $uri/ @rewrite;  
+        }
         
         # restrict access to hidden files, just in case
         location ~ /\. {
