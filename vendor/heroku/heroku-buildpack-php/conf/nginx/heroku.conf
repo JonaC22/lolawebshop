@@ -38,7 +38,7 @@ http {
             if (!-f $document_root$fastcgi_script_name) {
                 # check if the script exists
                 # otherwise, /foo.jpg/bar.php would get passed to FPM, which wouldn't run it as it's not in the list of allowed extensions, but this check is a good idea anyway, just in case
-                return 404;
+                #return 404;
             }
             
             fastcgi_pass heroku-fcgi;
