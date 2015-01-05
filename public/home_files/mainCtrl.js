@@ -2,20 +2,18 @@ angular.module('lolaFront', [])
 .controller('MainCtrl', [
 '$scope', '$http',
 function ($scope, $http) {
+
     //TODO: crear un servicio para search y pasarlo al controller como funcion
-    //trae las categorias almacenadas en la base de datos
-    $scope.url = '/search';
+    //trae los productos almacenados en la base de datos ordenados por fecha_agregado descendiente
+    $scope.url = '/productos';
     $http.get($scope.url).
         then(function(data, status, headers, config) {
-            var categorias = [];
-            angular.forEach(data.data, function(value, key) {
-                this.push(value.titulo);
-            }, categorias);
-            console.log(categorias);
-            $scope.clases = categorias;
+            console.log(data.data);
+            $scope.productos = data.data;
         });
 
     //$scope.clases = ['collares', 'clutchs', 'sombreros', 'chalinas', 'monederos', 'aros', 'portacelulares', 'cintos', 'billeteras'];
+    /*
     $scope.items = [
     {clase: 'collares', marca: 'Collar X-T', imagen: 'collar.jpg'},
     {clase: 'collares', marca: 'Collar Y-T', imagen: 'collar2.jpg'},
@@ -28,7 +26,7 @@ function ($scope, $http) {
     {clase: 'cintos', marca: 'Cintos dorados', imagen: 'cintos.jpg'},
     {clase: 'billeteras', marca: 'Billeteras de cuero', imagen: 'billetera.jpg'}
     ];
-/*
+
     $scope.filtroClases = function (item) {
         return Object.keys($scope.search || {}).every(function (key) {
             var value = $scope.search[key]; 

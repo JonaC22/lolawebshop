@@ -20,9 +20,9 @@ class HomeController extends BaseController {
 		return View::make('home');
 	}
 
-	public function search()
+	public function productos()
 	{
-		return View::make('search');
+		return View::make('productos');
 	}
 
 }

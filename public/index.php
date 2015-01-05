@@ -54,11 +54,5 @@ function pg_connection_string_from_database_url() {
   return "user=$user password=$pass host=$host dbname=" . substr($path, 1); # <- you may want to add sslmode=require there too
 }
 
-$pg_conn = pg_connect(pg_connection_string_from_database_url());
-
-$productos = pg_query($pg_conn, "SELECT * FROM lola.productos ORDER BY fecha_agregado DESC");
-
-pg_close();
-
 $app->run();
 

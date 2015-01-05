@@ -178,12 +178,12 @@
   
       <div class="full-width scale-text"> 
             <div class="container-mix" id="MixItUp565343">  
-                      <div class="img-work mix ng-class:item.clase" style="display: inline-block;" ng-repeat="item in items">
-                        <img ng-src="./home_files/{{item.imagen}}" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
+                      <div class="img-work mix ng-class:producto.categoria" style="display: inline-block;" ng-repeat="producto in productos">
+                        <img ng-src="http://res.cloudinary.com/dghszrsdy/image/upload/{{producto.imagen}}.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
                         <span></span>
                         <div class="works-title color_fff">
-                            <i>{{item.clase}}</i><br>
-                            <b>{{item.marca}}</b>
+                            <i>{{producto.categoria + ' ' + producto.proveedor}}</i><br>
+                            <b>{{producto.titulo}}</b>
                         </div>
                       </div>
                 </div>      
