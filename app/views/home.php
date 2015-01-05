@@ -22,7 +22,7 @@
   </div>
 	<div class="content-block act">
     	<div class="content-main">
-              <!--top-menu-->
+   <!--top-menu-->
               <div class="navigation">
                  <a class="logo"><img src="./home_files/logo.png" alt=""></a>
                  <div class="top-menu">
@@ -48,8 +48,8 @@
               
         <div class="scrollto" style="z-index:0;">	
         	<div class="page full-width">
-            	  	
-            	<!--top-slider-start-->
+  <!--END top-menu-->         	  	
+  <!--top-slider-start-->
                 
                     <div class="full-width full-h" style="height: 635px;">
                         <div class="fix-baner">
@@ -140,8 +140,9 @@
           </div>	
         </div>   
 
-                <!--top-slider-end-->
-    <!--PRODUCTOS-->
+  <!--END top-slider-->
+  
+  <!--PRODUCTOS-->
     
 <div class="scrollto dark-work">
   
@@ -154,40 +155,35 @@
         </div>
       </div>   
     </div>   
+  <!-- Filtro productos -->
     <div class="row">
        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12 scale-text">                      
               <div class="drop">
                 <input type="text" value="todos">
-                <!-- TODO: como crear los filtros de categorias con angular y seleccionarlos 
-                <select ng-model="clases" ng-options="elem for elem in clases"></select> -->
-                  <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="drop-list"></a>
-                    <span>
-<!--                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter="all" ng-repeat= "clase in clases"> {{clase}} </a>-->
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter active" data-filter="all">todos</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".collares">collares</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".clutchs">clutchs</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".portacelulares">portacelulares</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".sombreros">sombreros</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".chalinas">chalinas</a>
-                        <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".billeteras">billeteras</a>
-                    </span>
+                <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="drop-list"></a>
+                <span>
+                  <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter active" data-filter="all">todos</a>
+                  <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".{{clase}}" ng-repeat="clase in clases">{{clase}}</a>
+                </span>
               </div>
         </div>
      </div>
+  <!-- END Filtro productos -->
  </div>         
-  
-      <div class="full-width scale-text"> 
-            <div class="container-mix" id="MixItUp565343">  
-                      <div class="img-work mix ng-class:producto.categoria" style="display: inline-block;" ng-repeat="producto in productos">
-                        <img ng-src="http://res.cloudinary.com/dghszrsdy/image/upload/{{producto.imagen}}.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                        <span></span>
-                        <div class="works-title color_fff">
-                            <i>{{producto.categoria + ' ' + producto.proveedor}}</i><br>
-                            <b>{{producto.titulo}}</b>
-                        </div>
-                      </div>
-                </div>      
-     </div>           
+  <!-- Imagenes productos -->
+    <div class="full-width scale-text"> 
+      <div class="container-mix" id="MixItUp565343">  
+            <div class="img-work mix ng-class:producto.categoria" style="display: inline-block;" ng-repeat="producto in productos">
+                <img ng-src="http://res.cloudinary.com/dghszrsdy/image/upload/{{producto.imagen}}.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
+                <span></span>
+                <div class="works-title color_fff">
+                    <i>{{producto.categoria + ' ' + producto.proveedor}}</i><br>
+                    <b>{{producto.titulo}}</b>
+                </div>
+            </div>
+      </div>      
+    </div>  
+  <!-- END imagenes productos -->         
 </div>
 
 <div class="scrollto">
@@ -240,6 +236,8 @@
       </div>   
    </div> 
 </div>        
+<!--END Productos -->
+
 <!--popup-works-->
       
 <div class="popup-work-container">
@@ -286,6 +284,9 @@
         <div class="slider-next">×</div>
     </div> 
 </div>
+
+<!--END popup-works-->
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
 <script src="./home_files/mainCtrl.js"></script>
 <script src="./home_files/webfont.js" type="text/javascript" async=""></script>
