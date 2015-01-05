@@ -14,8 +14,8 @@ function ($scope, $http) {
             $scope.productos = data.data;
         });
 
-    $scope.clases = ['aros', 'billeteras', 'cintos', 
+    $scope.clases = ['aros', 'anillos', 'billeteras', 'cintos', 
     'chalinas', 'clutchs', 'collares', 'monederos', 
-    'portacelulares', 'pulseras', 'sombreros'];
+    'portacelulares', 'pulseras', 'relojes', 'sombreros'];
 
 }]);

@@ -16,6 +16,14 @@ START TRANSACTION;
 	FOREIGN KEY (categoria)
 	REFERENCES lola.categorias(id);
 
+	CREATE SEQUENCE producto_id_seq;
+	ALTER TABLE lola.productos ALTER id SET DEFAULT NEXTVAL('producto_id_seq'); 
+
+	CREATE SEQUENCE categoria_id_seq;
+	ALTER TABLE lola.categorias ALTER id SET DEFAULT NEXTVAL('categoria_id_seq');
+
+	CREATE UNIQUE INDEX categoria_titulo ON lola.categorias (titulo);
+
 	CREATE OR REPLACE FUNCTION lola.tests() RETURNS text AS $$
 		DECLARE
 			resultado text := ' ';
