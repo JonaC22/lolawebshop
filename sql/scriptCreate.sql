@@ -9,7 +9,7 @@ START TRANSACTION;
 		titulo varchar(40) NOT NULL,
 		proveedor varchar(40) NOT NULL,
 		categoria int NOT NULL,
-		fecha_agregado date NOT NULL,
+		fecha_agregado date NOT NULL DEFAULT current_date,
 		imagen varchar(40)
 	);
 	ALTER TABLE lola.productos ADD CONSTRAINT FK_categoria
