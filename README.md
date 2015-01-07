@@ -37,8 +37,21 @@ For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebs
 - Integrar con :
 	- Laravel ![alt text][DONE]
 	- Angular.js ![alt text][IN PROGRESS]
-	- Postgresql ![alt text][IN PROGRESS]
-	- Cloudinary ![alt text][IN PROGRESS]
+	- Postgresql ![alt text][IN PROGRESS] 
+		-Usar un ORM u objeto para encapsular las consultas a la BD
+	- Cloudinary ![alt text][DONE]
+	- Facebook API
+	- Twitter API
+- Requerimientos funcionales
+	- Mostrar fotos de productos ordenados por fecha de agregado ![alt text][DONE]	
+		- Mostrar la imagen en grande haciendo click
+	- Consultas en la pagina, que deben ser enviadas a casilla de email
+	- Geolocalizacion del local
+	- Push-notifications
+	- Likes y compartir en fotos
+- Requerimientos no funcionales
+	- Musica de fondo
+	- Informacion de direccion y complementaria
 
 [IN PROGRESS]: http://henri.eisenbeis.free.fr/plus/WorkInProgress.png "In Progress"
 [DONE]: http://www.amandasmithphotography.com/img/icon_done.gif "Done"
