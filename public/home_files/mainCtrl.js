@@ -14,7 +14,8 @@ function ($scope, $http) {
             $scope.productos = data.data;
         });
 
-    $scope.clases = ['aros', 'anillos', 'billeteras', 'cintos', 
+    //TODO: pasarlo a http.get
+    $scope.categorias = ['anillos', 'aros', 'billeteras', 'cintos', 
     'chalinas', 'clutchs', 'collares', 'monederos', 
     'portacelulares', 'pulseras', 'relojes', 'sombreros'];
 

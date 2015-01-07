@@ -163,7 +163,7 @@
                 <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="drop-list"></a>
                 <span>
                   <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter active" data-filter="all">todos</a>
-                  <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".{{clase}}" ng-repeat="clase in clases">{{clase}}</a>
+                  <a href="http://www.lolawebshop.herokuapp.com/home.html#" class="filter" data-filter=".{{categoria}}" ng-repeat="categoria in categorias">{{categoria}}</a>
                 </span>
               </div>
         </div>
