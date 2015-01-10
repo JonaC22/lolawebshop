@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,800,600,300&subset=latin-ext,latin">
 </head>
 <body class="dark" ng-app="lolaFront" ng-controller="MainCtrl">
+<audio src="/home_files/audio.mp3" autoplay loop></audio>
 	<div class="loader">
 	    <img src="./home_files/loader.GIF" alt=""> 
   </div>
