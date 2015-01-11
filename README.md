@@ -50,7 +50,8 @@ For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebs
 	- Push-notifications
 	- Likes y compartir en fotos
 - Requerimientos no funcionales
-	- Musica de fondo
+	- Light-box (jQuery)
+	- Musica de fondo ![alt text][DONE]
 	- Informacion de direccion y complementaria
 
 [IN PROGRESS]: http://henri.eisenbeis.free.fr/plus/WorkInProgress.png "In Progress"
