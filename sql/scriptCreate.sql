@@ -10,7 +10,8 @@ START TRANSACTION;
 		proveedor varchar(40) NOT NULL,
 		categoria int NOT NULL,
 		fecha_agregado date NOT NULL DEFAULT current_date,
-		imagen varchar(40)
+		imagen varchar(40),
+		stock boolean DEFAULT true
 	);
 	ALTER TABLE lola.productos ADD CONSTRAINT FK_categoria
 	FOREIGN KEY (categoria)
