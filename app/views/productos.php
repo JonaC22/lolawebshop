@@ -4,7 +4,7 @@
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
 
 $result = pg_query($pg_conn, 
-	"SELECT p.id, p.titulo, proveedor, c.titulo categoria, fecha_agregado, imagen 
+	"SELECT p.id, p.titulo, proveedor, c.titulo categoria, fecha_agregado, imagen, stock 
 	FROM lola.productos p JOIN lola.categorias c on p.categoria = c.id 
 	ORDER BY fecha_agregado DESC;");
 
@@ -20,6 +20,7 @@ while($r = pg_fetch_assoc($result)){
 	$row['categoria'] = $r['categoria'];
 	$row['fecha_agregado'] = $r['fecha_agregado'];
 	$row['imagen'] = $r['imagen'];
+	$row['stock'] = $r['stock'];
 	$jsonArray[] = $row;
 }
 

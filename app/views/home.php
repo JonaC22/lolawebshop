@@ -176,10 +176,10 @@
       <div class="container-mix" id="MixItUp565343">  
             <div class="img-work mix ng-class:producto.categoria" style="display: inline-block;" ng-repeat="producto in productos">
                 <img ng-src="http://res.cloudinary.com/dghszrsdy/image/upload/{{producto.imagen}}.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
-                <span></span>
                 <div class="works-title color_fff">
                     <i>{{producto.categoria + ' ' + producto.proveedor}}</i><br>
-                    <b>{{producto.titulo}}</b>
+                    <b>{{producto.titulo}}</b><br>
+                    <b ng-if="producto.stock === 'f' " style= "color:red">SIN STOCK</b> 
                 </div>
             </div>
       </div>      
@@ -239,7 +239,7 @@
 </div>        
 <!--END Productos -->
 
-<!--popup-works-->
+<!--popup-works
       
 <div class="popup-work-container">
     <div class="popup-container popup-slider">
@@ -286,7 +286,7 @@
     </div> 
 </div>
 
-<!--END popup-works-->
+END popup-works-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
 <script src="./home_files/mainCtrl.js"></script>
