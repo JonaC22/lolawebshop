@@ -4,4 +4,3 @@
 *.configuration
 vendor/*
 auto/*
-composer.lock
