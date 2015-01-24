@@ -43,8 +43,10 @@ For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebs
 	- Facebook API
 	- Twitter API
 - Requerimientos funcionales
-	- Mostrar fotos de productos ordenados por fecha de agregado ![alt text][DONE]	
-		- Mostrar la imagen en grande haciendo click
+	- Productos
+		- Mostrar fotos de productos ordenados por fecha de agregado ![alt text][DONE]	
+			- Mostrar la imagen en grande haciendo click
+		- Mostrar estado de stock ![alt text][DONE]
 	- Consultas en la pagina, que deben ser enviadas a casilla de email
 	- Geolocalizacion del local
 	- Push-notifications
