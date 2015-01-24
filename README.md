@@ -10,7 +10,7 @@ Make sure you have PHP, Apache and Composer installed.  Also, install the [Herok
 $ git clone https://github.com/JonaC22/lolawebshop.git # or clone your own fork
 $ cd lolawebshop
 $ composer update
-$ sudo foreman start web
+$ sudo sh auto/prepareScript.sh
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
