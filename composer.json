@@ -9,8 +9,8 @@
 		"propel/propel": "~2.0@dev"
 	},
 	"require-dev": {
-    		"heroku/heroku-buildpack-php": "*"
- 	},
+    	"heroku/heroku-buildpack-php": "dev-master"
+  	},
 	"autoload": {
 		"classmap": [
 			"app/commands",
