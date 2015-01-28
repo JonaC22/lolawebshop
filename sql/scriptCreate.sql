@@ -49,6 +49,7 @@ START TRANSACTION;
 				AND categoria = 1
 				AND fecha_agregado = current_date
 				AND imagen = 'sample'
+				AND stock = true
 		)
 		THEN resultado := resultado || 'TEST Productos OK ';
 		ELSE resultado := resultado || 'TEST Productos FAILED ';
