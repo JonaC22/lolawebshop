@@ -813,12 +813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/propelorm/Propel2.git",
-                "reference": "0e05013166c6a7ecf7292a7fcb3504852a68f837"
+                "reference": "eba539966bafca4f2992307ad6364da40eb4a9ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propelorm/Propel2/zipball/0e05013166c6a7ecf7292a7fcb3504852a68f837",
-                "reference": "0e05013166c6a7ecf7292a7fcb3504852a68f837",
+                "url": "https://api.github.com/repos/propelorm/Propel2/zipball/eba539966bafca4f2992307ad6364da40eb4a9ff",
+                "reference": "eba539966bafca4f2992307ad6364da40eb4a9ff",
                 "shasum": ""
             },
             "require": {
@@ -870,7 +870,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2015-01-21 17:07:20"
+            "time": "2015-01-29 20:08:07"
         },
         {
             "name": "psr/log",
@@ -2099,12 +2099,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "166ad317a307082d037a6d201ddb602f3295af9a"
+                "reference": "1746ff03c4c7e44a9c882efd1c90d30baa99f7d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/166ad317a307082d037a6d201ddb602f3295af9a",
-                "reference": "166ad317a307082d037a6d201ddb602f3295af9a",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1746ff03c4c7e44a9c882efd1c90d30baa99f7d4",
+                "reference": "1746ff03c4c7e44a9c882efd1c90d30baa99f7d4",
                 "shasum": ""
             },
             "bin": [
@@ -2135,7 +2135,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-01-19 23:21:04"
+            "time": "2015-01-29 23:14:14"
         }
     ],
     "aliases": [],

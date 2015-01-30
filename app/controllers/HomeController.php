@@ -25,4 +25,9 @@ class HomeController extends BaseController {
 		return View::make('productos');
 	}
 
+	public function categorias()
+	{
+		return View::make('categorias');
+	}
+
 }

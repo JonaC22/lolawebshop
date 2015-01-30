@@ -14,3 +14,5 @@
 Route::get('/', 'HomeController@showWelcome');
 
 Route::get('/productos', 'HomeController@productos');
+
+Route::get('/categorias', 'HomeController@categorias');

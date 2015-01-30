@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,800,600,300&subset=latin-ext,latin">
 </head>
 <body class="dark" ng-app="lolaFront" ng-controller="MainCtrl">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+<script src="./home_files/mainCtrl.js"></script>
 <audio src="/home_files/audio.mp3" autoplay loop></audio>
 	<div class="loader">
 	    <img src="./home_files/loader.GIF" alt=""> 
@@ -288,8 +290,6 @@
 
 END popup-works-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
-<script src="./home_files/mainCtrl.js"></script>
 <script src="./home_files/webfont.js" type="text/javascript" async=""></script>
 <script src="./home_files/jquery-1.11.1.min.js"></script>
 <script src="./home_files/all.js"></script>
