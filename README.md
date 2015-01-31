@@ -38,7 +38,7 @@ For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebs
 	- Laravel ![alt text][DONE]
 	- Angular.js ![alt text][IN PROGRESS]
 	- Postgresql ![alt text][IN PROGRESS]
-		- Usar un ORM u objeto para encapsular las consultas a la BD
+		- Usar un ORM u objeto para encapsular las consultas a la BD ![alt text][IN PROGRESS]
 	- Cloudinary ![alt text][DONE]
 	- Facebook API
 	- Twitter API
