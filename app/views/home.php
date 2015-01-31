@@ -10,6 +10,7 @@
   <link href="./home_files/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="./home_files/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="./home_files/style.css" rel="stylesheet" type="text/css">
+  <link href="./home_files/lightbox.css" rel="stylesheet" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
@@ -17,8 +18,6 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,800,600,300&subset=latin-ext,latin">
 </head>
 <body class="dark" ng-app="lolaFront" ng-controller="MainCtrl">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
-<script src="./home_files/mainCtrl.js"></script>
 <audio src="/home_files/audio.mp3" autoplay loop></audio>
 	<div class="loader">
 	    <img src="./home_files/loader.GIF" alt=""> 
@@ -176,14 +175,14 @@
   <!-- Imagenes productos -->
     <div class="full-width scale-text"> 
       <div class="container-mix" id="MixItUp565343">  
-            <div class="img-work mix ng-class:producto.categoria" style="display: inline-block;" ng-repeat="producto in productos">
+            <a class="img-work mix ng-class:producto.categoria" href="http://res.cloudinary.com/dghszrsdy/image/upload/{{producto.imagen}}.jpg" data-lightbox="producto" style="display: inline-block;" ng-repeat="producto in productos">
                 <img ng-src="http://res.cloudinary.com/dghszrsdy/image/upload/{{producto.imagen}}.jpg" alt="" class="onload loaded" onload="this.setAttribute(&#39;class&#39;, &#39;onload loaded&#39;);">
                 <div class="works-title color_fff">
                     <i>{{producto.categoria + ' ' + producto.proveedor}}</i><br>
                     <b>{{producto.titulo}}</b><br>
                     <b ng-if="producto.stock === 'f' " style= "color:red">SIN STOCK</b> 
                 </div>
-            </div>
+            </a>
       </div>      
     </div>  
   <!-- END imagenes productos -->         
@@ -290,6 +289,8 @@
 
 END popup-works-->
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+<script src="./home_files/mainCtrl.js"></script>
 <script src="./home_files/webfont.js" type="text/javascript" async=""></script>
 <script src="./home_files/jquery-1.11.1.min.js"></script>
 <script src="./home_files/all.js"></script>
@@ -302,5 +303,6 @@ END popup-works-->
 <script src="./home_files/ScrollToPlugin.min.js"></script>
 <script src="./home_files/smoothPageScroll.js"></script>
 <script src="./home_files/jquery.mixitup.min.js"></script>
+<script src="./home_files/lightbox.min.js"></script>
 </body>
 </html>
