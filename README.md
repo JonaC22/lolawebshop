@@ -52,7 +52,7 @@ For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebs
 	- Push-notifications
 	- Likes y compartir en fotos
 - Requerimientos no funcionales
-	- Light-box (jQuery)
+	- Light-box ![alt text][DONE]
 	- Musica de fondo ![alt text][DONE]
 	- Informacion de direccion y complementaria
 
