@@ -45,15 +45,18 @@ For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebs
 - Requerimientos funcionales
 	- Productos
 		- Mostrar fotos de productos ordenados por fecha de agregado ![alt text][DONE]	
-			- Mostrar la imagen en grande haciendo click
+			- Mostrar la imagen en grande haciendo click ![alt text][DONE]
+			- Mostrar anterior/siguiente por flechas izquierda/derecha ![alt text][DONE]
 		- Mostrar estado de stock ![alt text][DONE]
 	- Consultas en la pagina, que deben ser enviadas a casilla de email
 	- Geolocalizacion del local
 	- Push-notifications
 	- Likes y compartir en fotos
 - Requerimientos no funcionales
-	- Light-box ![alt text][DONE]
-	- Musica de fondo ![alt text][DONE]
+	- Musica de fondo ![alt text][IN PROGRESS]
+		- Agregar musica ![alt text][DONE]
+		- 5 lista de temas a reproducir 
+		- Controles de reproduccion de audio
 	- Informacion de direccion y complementaria
 
 [IN PROGRESS]: http://henri.eisenbeis.free.fr/plus/WorkInProgress.png "In Progress"
