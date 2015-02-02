@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,800,600,300&subset=latin-ext,latin">
 </head>
 <body class="dark" ng-app="lolaFront" ng-controller="MainCtrl">
-<audio src="/home_files/audio.mp3" autoplay loop></audio>
 	<div class="loader">
 	    <img src="./home_files/loader.GIF" alt=""> 
   </div>
@@ -27,23 +26,30 @@
    <!--top-menu-->
               <div class="navigation">
                  <a class="logo"><img src="./home_files/logo.png" alt=""></a>
+                 
                  <div class="top-menu">
-                          <div class="menu-mobile-icon menu-hide">
-                            <a href=""><img src="./home_files/mobile.png" alt=""></a>
-                          </div>
+                      
+                      <div class="menu-mobile-icon menu-hide">
+                             <a href=""><img src="./home_files/mobile.png" alt=""></a>
+                      </div>
                       <nav class="class">
-                             <a data-href="home" class="active">Home
-                               <span class="border-top"></span>
-                               <span class="border-left"></span>
-                             </a>
-                             <a data-href="productos">Productos
-                               <span class="border-top"></span>
-                               <span class="border-left"></span>
-                             </a>
-                             <a data-href="marcas" class="">Marcas
-                               <span class="border-top"></span>
-                               <span class="border-left"></span>
-                             </a>
+                            <a data-href="home" class="active">Home
+                              <span class="border-top"></span>
+                              <span class="border-left"></span>
+                            </a>
+                            <a data-href="productos">Productos
+                              <span class="border-top"></span>
+                              <span class="border-left"></span>
+                            </a>
+                            <a data-href="marcas" class="">Marcas
+                              <span class="border-top"></span>
+                              <span class="border-left"></span>
+                            </a>
+                            <audio id="yourAudio" autoplay loop style="width: 200px;">
+                              <source src="/home_files/audio.mp3">
+                              Your browser does not support the audio element.
+                            </audio>
+                            <a href="#" id="audioControl">Pause!</a>
                       </nav>   
                  </div>
               </div>
@@ -304,5 +310,23 @@ END popup-works-->
 <script src="./home_files/smoothPageScroll.js"></script>
 <script src="./home_files/jquery.mixitup.min.js"></script>
 <script src="./home_files/lightbox.min.js"></script>
+<script type="text/javascript">
+  var yourAudio = document.getElementById('yourAudio'),
+    ctrl = document.getElementById('audioControl');
+
+  ctrl.onclick = function () {
+
+      // Update the Button
+      var play = ctrl.innerHTML === 'Pause!';
+      ctrl.innerHTML = play ? 'Play!' : 'Pause!';
+
+      // Update the Audio
+      var method = play ? 'pause' : 'play';
+      yourAudio[method]();
+
+      // Prevent Default Action
+      return false;
+  };
+</script>
 </body>
 </html>
