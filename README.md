@@ -56,7 +56,7 @@ For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebs
 	- Musica de fondo ![alt text][IN PROGRESS]
 		- Agregar musica ![alt text][DONE]
 		- 5 lista de temas a reproducir 
-		- Controles de reproduccion de audio
+		- Pausar/reproducir ![alt text][DONE]
 	- Informacion de direccion y complementaria
 
 [IN PROGRESS]: http://henri.eisenbeis.free.fr/plus/WorkInProgress.png "In Progress"
