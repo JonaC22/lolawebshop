@@ -34,6 +34,12 @@ For more information about using PHP on Heroku, see these Dev Center articles:
 For troubles when installing, see the [wiki](https://github.com/JonaC22/lolawebshop/wiki)
 
 ## TODO
+- Testing ![alt text][IN PROGRESS]
+- Documentación
+	- Casos de Uso
+	- Diseño
+	- Condiciones y casos de prueba
+	- Diagrama de entidad-relación
 - Integrar con :
 	- Laravel ![alt text][DONE]
 	- Angular.js ![alt text][IN PROGRESS]
